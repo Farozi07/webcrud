@@ -1,7 +1,10 @@
 <?php
 
 use App\Http\Controllers\ProfileController;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PhoneController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -29,3 +32,12 @@ Route::middleware('auth')->group(function () {
 });
 
 require __DIR__.'/auth.php';
+
+
+Route::get('/phone', [PhoneController::class, 'index'])->name('phone.index');
+Route::get('/phone/create', [PhoneController::class,'create'])->name('phone.create');
+Route::post('/phone/store', [PhoneController::class,'store'])->name('phone.store');
+Route::get('/phone/edit/{phone}', [PhoneController::class,'edit'])->name('phone.edit');
+Route::put('/phone/update/{phone}', [PhoneController::class,'update'])->name('phone.update');
+Route::get('/phone/detail/{phone}', [PhoneController::class,'detail'])->name('phone.detail');
+Route::post('/phone/delete/{phone}', [PhoneController::class,'delete'])->name('phone.delete');
