@@ -75,7 +75,7 @@
                                                             aria-label="Close"></button>
                                                     </div>
                                                     <div class="modal-body">
-                                                        Apakah anda yakin ingin menghapus {{ $p->nama }}
+                                                        Apakah anda yakin ingin menghapus HP {{ $p->nama }}
                                                     </div>
                                                     <div class="modal-footer">
                                                         <button type="button" class="btn btn-secondary"
