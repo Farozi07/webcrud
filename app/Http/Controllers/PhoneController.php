@@ -14,12 +14,12 @@ class PhoneController extends Controller
 
     public function insertPhone(){
         $result=Phone::create([
-            'imei'=>1234567890,
+            'imei'=>1234567120,
             'merek'=>'Samsung',
-            'nama'=>'Note 10 Plus',
+            'nama'=>'M30',
             'status'=>'resmi',
-            'jumlah'=>'30',
-            'harga'=> 7000000,
+            'jumlah'=>'12',
+            'harga'=> 3400000,
         ]);
         dump($result);
     }

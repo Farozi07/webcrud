@@ -68,9 +68,6 @@
                                         value="tidakresmi"
                                         {{ (old('status') ?? $phone->status) == 'tidakresmi' ? 'checked' : '' }}>
                                     <label for="tidakresmi" class="form-check-">Tidak Resmi</label>
-                                    {{-- <input type="radio" class="form-check-input" name="status" id="tidakresmi"
-                                        value="tidakresmi" @if ($phone->status == 'tidakresmi') checked @endif>
-                                    <label for="tidakresmi" class="form-check-">Tidak Resmi</label> --}}
                                 </div>
                             </div>
                             <div>

@@ -54,7 +54,6 @@
                                         <a href="{{ url('/phone/edit/' . $p->id) }}" class="btn btn-warning">EDIT</a>
                                         <a href="{{ url('/phone/detail/' . $p->id) }}"
                                             class="btn btn-success">DETAIL</a>
-
                                         <!-- Button trigger modal -->
                                         <!-- Modal trigger button -->
                                         <button type="button" class="btn btn-danger " data-bs-toggle="modal"
@@ -92,16 +91,10 @@
                                                 </div>
                                             </div>
                                         </div>
-
-
                                         <!-- Optional: Place to the bottom of scripts -->
                                         <script>
                                             const myModal = new bootstrap.Modal(document.getElementById('modalId'), options)
                                         </script>
-
-
-
-
                                     </td>
                                 </tr>
                             @empty
